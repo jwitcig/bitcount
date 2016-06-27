@@ -1,0 +1,8 @@
+export SITE_URL=http://0.0.0.0:8000/
+
+export TWITTER_CONSUMER_KEY=tdnOufjNHG1n8l26LjlpnRnvh
+export TWITTER_CONSUMER_SECRET=49R39yFRoccwIrrJ3blEDtq7JzlGWRH0Vae3Oi6LB1NZnv7meI
+export TWITTER_ACCESS_TOKEN_KEY=397557013-beHoDMLkDY3KkOyxxHBuXJcCMFcJC0mk2joyMxjO
+export TWITTER_ACCESS_TOKEN_SECRET=xVJUq7AiGQoWovlTwCgYeP2zb1Gcyd2pCTm9YzkTVzvj7
+
+echo 'exported environment variables'
