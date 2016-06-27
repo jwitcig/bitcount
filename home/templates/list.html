@@ -1,0 +1,27 @@
+
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+
+<div class="row">
+  <div class="col-md-12">
+
+    <h1 class="text-center">Who's got the best ratio?</h1>
+
+      <ol>
+        {% for entry in entries|dictsortreversed:"ratio" %}
+          <li class="text-center">
+
+            <div class="container-fluid">
+
+              {{ entry.screen_name }} - {{ entry.ratio|floatformat:2 }}
+
+            </div>
+
+          </li>
+        {% empty %}
+          <li>No articles yet.</li>
+        {% endfor %}
+      </ol>
+
+  </div>
+</div>
