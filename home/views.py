@@ -3,8 +3,10 @@ import json
 import os
 
 from django.conf import settings
+from django.core.urlresolvers import reverse_lazy, reverse
 from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render
+from django.views.generic.base import RedirectView
 from django.views.generic.list import ListView, View
 
 import requests
@@ -109,5 +111,7 @@ def StatsView(ListView):
     response = "You're looking at the results of question %s."
     return HttpResponse(response % question_id)
 
-def vote(request, question_id):
-    return HttpResponse("You're voting on question %s." % question_id)
+class HomeView(RedirectView):
+
+    def get_redirect_url(self):
+        return reverse('login:login')

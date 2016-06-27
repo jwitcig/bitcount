@@ -5,7 +5,7 @@
 <div class="row">
   <div class="col-md-12">
 
-    <h1 class="text-center">Who's got the best ratio?</h1>
+    <h1 class="text-center" style="font-size: 120px;">[the ranks]</h1>
 
       <ol>
         {% for entry in entries|dictsortreversed:"ratio" %}
@@ -19,7 +19,7 @@
 
           </li>
         {% empty %}
-          <li>No articles yet.</li>
+
         {% endfor %}
       </ol>
 

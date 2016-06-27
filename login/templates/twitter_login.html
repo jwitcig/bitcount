@@ -1,5 +1,40 @@
 <html>
-  <a href="{{authenticate_url}}" target="_blank">
-    <img src="https://g.twimg.com/dev/sites/default/files/images_documentation/sign-in-with-twitter-gray.png" alt="Sign in with Twitter" title="Sign in with Twitter">
-  </a>
+  <head>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+    <style>
+      #top-spacer {
+        margin-top: 100px;
+      }
+
+      .button-wrapper {
+          padding: 20px;
+      }
+    </style>
+  </head>
+
+  <div id="top-spacer"></div>
+
+  <div class="text-center">
+
+    <div class="row">
+      <h1 style="font-size: 120px;">[ranks]</h1>
+    </div>
+
+
+    <div class="row">
+      <div class="button-wrapper">
+        <a href="{{authenticate_url}}" target="_blank">
+          <img src="https://g.twimg.com/dev/sites/default/files/images_documentation/sign-in-with-twitter-gray.png" alt="Sign in with Twitter" title="Sign in with Twitter">
+        </a>
+      </div>
+    </div>
+
+    <div class="text-center">
+      <p>To find your ranking, you must login with Twitter.</p>
+    </div>
+
+  </div>
+
+
 </html>
